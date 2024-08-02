@@ -4,7 +4,8 @@ import styles from "./page.module.css";
 import BannerImg from "./components/BannerImg/BannerImg";
 import { data } from "../data.js";
 import { useState } from "react";
-import BannerModal from "./components/BannerModal/BannerModal";
+import BannerModal from "./components/BannerModal/EditBanner";
+import EditBanner from "./components/BannerModal/EditBanner";
 
 export default function Home() {
   const [modalisOpen, setIsModalOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Home() {
       ))}
 
       {modalisOpen && (
-        <BannerModal info={modalInfo as any} setIsOpen={setIsModalOpen} />
+        <EditBanner info={modalInfo as any} setIsOpen={setIsModalOpen} />
       )}
     </main>
   );

@@ -14,7 +14,7 @@ interface BannerModalProps {
   };
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const BannerModal = ({ info, setIsOpen }: BannerModalProps) => {
+const EditBanner = ({ info, setIsOpen }: BannerModalProps) => {
   const [formData, setFormData] = useState({});
 
   const handleChange = (
@@ -79,4 +79,4 @@ const BannerModal = ({ info, setIsOpen }: BannerModalProps) => {
   );
 };
 
-export default BannerModal;
+export default EditBanner;
